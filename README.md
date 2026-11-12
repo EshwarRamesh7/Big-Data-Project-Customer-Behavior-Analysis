@@ -1,96 +1,51 @@
+# Customer Behaviour Analytics at Scale — PySpark
 
-Big Data analytics project using Apache Spark to analyze e-commerce transactions and customer survey data. Includes EDA, RFM segmentation, market basket analysis, and insights on purchasing behavior, product performance, and customer retention.
+A big-data analytics project exploring e-commerce transactions, customer value, product combinations and purchasing patterns using Apache Spark.
 
-# 🛒 Big Data Project — Customer Behavior Analysis
+**Tools:** PySpark · Python · Pandas · NumPy · Matplotlib · Seaborn
 
-## 📄 Project Overview
-This project focuses on analyzing customer purchasing behavior and sales performance for an e-commerce business using **Apache Spark**.  
-The goal is to uncover insights from large-scale transaction and survey data to support **marketing optimization, inventory planning, and customer retention strategies**.
+## Business question
 
----
+How can an e-commerce business use transaction and customer-survey data to understand buying behaviour, identify valuable customer segments and improve merchandising, inventory planning and retention?
 
-## 🎯 Business Objective
-- Understand purchasing patterns, customer demographics, and seasonal trends.  
-- Identify high-value customers using RFM analysis.  
-- Detect top-performing products, high-revenue regions, and potential fraud patterns.  
-- Provide actionable recommendations to improve customer satisfaction and revenue growth.
+## Data
 
----
+The project describes US Amazon purchase records from 2018–2022 and related survey/field data:
 
-## 🧩 Dataset Overview
-The dataset includes **longitudinal purchase records** from Amazon.com users in the United States (2018–2022).  
-It is divided into three CSV files:
-- `amazon-purchases.csv` — Transactional sales data  
-- `survey.csv` — Customer survey responses  
-- `fields.csv` — Demographic and product attribute details  
+- `amazon-purchases.csv` — transaction data.
+- `survey.csv` — customer survey responses.
+- `fields.csv` — field descriptions and attributes.
 
-### 🔑 Key Attributes
-- **Order dates** – Enables trend analysis across time  
-- **Product details** – Title, Category, Price, Quantity  
-- **Geographic data** – Shipping states for regional analysis  
-- **Survey response IDs** – Links purchases with customer feedback  
+These source CSVs are not currently included in this repository. A local copy is required to reproduce the analysis end to end.
 
----
+## Analysis
 
-## ⚙️ Tools & Technologies
-- **Big Data Framework:** Apache Spark  
-- **Language:** Python  
-- **Libraries:** PySpark, pandas, matplotlib, seaborn  
-- **Visualization Tools:** Power BI / Excel  
-- **Techniques Used:**  
-  - Exploratory Data Analysis (EDA)  
-  - Market Basket Analysis  
-  - RFM Segmentation  
-  - Outlier and Trend Detection  
-  - Customer Demographic Analysis  
+- Data inspection, cleaning and validation.
+- Exploratory analysis of purchase timing, products, categories and geography.
+- Feature engineering for revenue and purchase behaviour.
+- **RFM segmentation** using recency, frequency and monetary value.
+- **Market basket analysis** to identify product combinations.
+- Business recommendations for inventory, retention and cross-selling.
 
----
+## Business relevance
 
-## 🧹 Data Preparation & Cleaning
-- Verified data consistency and formatted columns.  
-- Handled missing values and outliers with business-context awareness.  
-- Applied feature engineering to derive new variables such as revenue and purchase frequency.  
-- Removed invalid entries (e.g., negative prices or missing attributes).
+The analysis is intended to help align inventory with seasonal demand, target customer segments more thoughtfully and use product associations to inform cross-selling. Irregular transactions should be treated as review candidates, not labelled as fraud without a validated fraud definition.
 
----
+## Repository contents
 
-## 📈 Exploratory Data Analysis (EDA)
-- Analyzed **purchase distributions** by hour, day, and month.  
-- Compared **weekday vs weekend** purchase behavior.  
-- Performed **market basket analysis** to find frequently purchased product combinations.  
-- Examined **product performance** through revenue and item popularity.  
-- Evaluated **geographic sales** and **category-wise trends**.  
-- Computed KPIs such as **average spend per customer** and **seasonal trends**.
+- `Big+Data+Assignment+_+Customer+Behaviour+Analysis+_+Starter+Notebook1.ipynb` — analysis notebook.
+- `Big Data Assignment - Customer Behavior Analysis.pdf` — project report.
+- `monthly_trend.png`, `yearly_trend.png`, `purchase_distribution.png` — supporting visuals.
+- `docs/PROJECT_GUIDE_AND_INTERVIEW_QUESTIONS.md` — project explanation and interview preparation.
 
----
+## Reproducibility
 
-## 👥 Customer Behavior Analysis
-- Performed **RFM segmentation** to classify customers by Recency, Frequency, and Monetary value.  
-- Analyzed **repeat purchases** and customer loyalty.  
-- Identified **top-selling products** and **high-growth regions**.  
-- Flagged **irregular transactions** to detect potential fraud.  
-- Compared **new vs established products** for lifecycle insights.
+Set up a compatible Spark/PySpark environment and place the source CSV files in the paths expected by the notebook, or update those paths. The original CSVs are not stored in this repository.
 
----
+## Interview preparation
 
-## 💡 Key Insights & Recommendations
-- Align inventory with seasonal demand and top-selling product categories.  
-- Tailor marketing strategies for different customer segments.  
-- Implement personalized pricing and loyalty programs for high-value customers.  
-- Focus marketing spend on high-revenue states.  
-- Monitor real-time demand fluctuations to enhance operational efficiency.
+See [Project explanation and interview questions](docs/PROJECT_GUIDE_AND_INTERVIEW_QUESTIONS.md).
 
----
+## Author
 
-## 📁 Project Structure
-
-[Big+Data+Assignment+_+Customer+Behaviour+Analysis+_+Starter+Notebook1.ipynb](https://github.com/user-attachments/files/23291863/Big%2BData%2BAssignment%2B_%2BCustomer%2BBehaviour%2BAnalysis%2B_%2BStarter%2BNotebook1.ipynb)
-
-
----
-
-## 👨‍💻 Author
-**Eshwar Ramesh**  
-Data Analyst | Big Data & Spark Enthusiast  
-📧 eshwarramesh1985@gmail.com  
-🌐 [https://github.com/yourusername](https://github.com/EshwarRamesh7)
+**Eshwar Ramesh** · [GitHub](https://github.com/EshwarRamesh7) · [Portfolio](https://eshwarrameshportfolio.netlify.app) · [LinkedIn](https://www.linkedin.com/in/eshwar-ramesh-9a4652251)
