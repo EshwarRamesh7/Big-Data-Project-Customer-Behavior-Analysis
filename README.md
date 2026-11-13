@@ -36,15 +36,11 @@ The analysis is intended to help align inventory with seasonal demand, target cu
 - `Big+Data+Assignment+_+Customer+Behaviour+Analysis+_+Starter+Notebook1.ipynb` — analysis notebook.
 - `Big Data Assignment - Customer Behavior Analysis.pdf` — project report.
 - `monthly_trend.png`, `yearly_trend.png`, `purchase_distribution.png` — supporting visuals.
-- `docs/PROJECT_GUIDE_AND_INTERVIEW_QUESTIONS.md` — project explanation and interview preparation.
 
 ## Reproducibility
 
 Set up a compatible Spark/PySpark environment and place the source CSV files in the paths expected by the notebook, or update those paths. The original CSVs are not stored in this repository.
 
-## Interview preparation
-
-See [Project explanation and interview questions](docs/PROJECT_GUIDE_AND_INTERVIEW_QUESTIONS.md).
 
 ## Author
 
